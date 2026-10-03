@@ -1,0 +1,85 @@
+{
+  "n_raw_labeled": 7348,
+  "unlabeled_skipped": 0,
+  "corrupt": 0,
+  "exact_duplicates_removed": 64,
+  "label_conflicts_dropped": 0,
+  "n_final": 7284,
+  "class_counts": {
+    "normal": 3073,
+    "defective": 4211
+  },
+  "imbalance_ratio_majority_to_minority": 1.37,
+  "image_sizes": {
+    "300x300": 7284
+  },
+  "brightness_by_class": {
+    "0": {
+      "count": 3073.0,
+      "mean": 149.82,
+      "std": 6.47,
+      "min": 123.84,
+      "25%": 143.11,
+      "50%": 151.92,
+      "75%": 154.09,
+      "max": 160.62
+    },
+    "1": {
+      "count": 4211.0,
+      "mean": 139.26,
+      "std": 5.81,
+      "min": 124.29,
+      "25%": 135.16,
+      "50%": 138.84,
+      "75%": 142.51,
+      "max": 157.02
+    }
+  },
+  "sharpness_by_class": {
+    "0": {
+      "count": 3073.0,
+      "mean": 171.53,
+      "std": 79.13,
+      "min": 69.31,
+      "25%": 90.56,
+      "50%": 163.66,
+      "75%": 237.58,
+      "max": 573.14
+    },
+    "1": {
+      "count": 4211.0,
+      "mean": 195.42,
+      "std": 70.49,
+      "min": 69.02,
+      "25%": 145.52,
+      "50%": 188.48,
+      "75%": 237.09,
+      "max": 1029.53
+    }
+  },
+  "near_dup_groups": {
+    "n_groups": 7032,
+    "largest": 14,
+    "groups_gt1": 187
+  },
+  "splits": {
+    "train": {
+      "n": 5202,
+      "normal": 2195,
+      "defective": 3007,
+      "defective_frac": 0.578
+    },
+    "val": {
+      "n": 1041,
+      "normal": 439,
+      "defective": 602,
+      "defective_frac": 0.578
+    },
+    "test": {
+      "n": 1041,
+      "normal": 439,
+      "defective": 602,
+      "defective_frac": 0.578
+    }
+  }
+}

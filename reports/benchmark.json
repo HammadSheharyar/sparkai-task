@@ -1,0 +1,27 @@
+{
+  "input_size": 256,
+  "params_millions": 4.01,
+  "onnx_size_mb": 16.03,
+  "runs": {
+    "pytorch_cpu_b1": {
+      "p50_ms": 41.62,
+      "p95_ms": 84.69,
+      "img_per_s": 24.0
+    },
+    "onnx_cpue_b1": {
+      "p50_ms": 13.61,
+      "p95_ms": 15.83,
+      "img_per_s": 73.5
+    },
+    "pytorch_cpu_b8": {
+      "p50_ms": 315.24,
+      "p95_ms": 383.89,
+      "img_per_s": 25.4
+    },
+    "onnx_cpue_b8": {
+      "p50_ms": 153.6,
+      "p95_ms": 201.21,
+      "img_per_s": 52.1
+    }
+  }
+}

@@ -1,0 +1,18 @@
+flowchart LR
+  subgraph Offline["Offline: training pipeline"]
+    RAW[Raw images<br/>cast_def_* / cast_ok_*] --> PREP[data_prep<br/>EDA, md5 + dHash dedup,<br/>stratified GROUP split]
+    PREP --> TRAIN[train<br/>EfficientNet-B0, ImageNet transfer<br/>2-phase, pos_weight, aug]
+    TRAIN --> CKPT[(best.pt + val-tuned threshold)]
+    CKPT --> EVAL[evaluate<br/>P/R/F1, CM, PR/ROC,<br/>FP/FN Grad-CAM]
+    CKPT --> EXP[export_onnx<br/>+ parity check]
+    EXP --> ONNX[(model.onnx + model_meta.json)]
+  end
+  subgraph Online["Online: Docker service"]
+    C[Client / line camera] -->|multipart image| API[FastAPI<br/>validate, auth, size limit]
+    API --> PRE[shared preprocess]
+    PRE --> ORT[ONNX Runtime]
+    ORT --> POST[threshold, confidence,<br/>needs_human_review]
+    POST -->|JSON| C
+    API --> LOG[(JSON logs +<br/>predictions.jsonl)]
+  end
+  ONNX --> ORT

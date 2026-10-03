@@ -1,0 +1,7 @@
+data
+reports
+logs
+tests
+.git
+models/*.pt
+__pycache__

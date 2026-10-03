@@ -1,0 +1,39 @@
+paths:
+  raw_dir: data/raw            # put the Kaggle casting images here (any sub-folder layout, see README)
+  processed_dir: data/processed
+  models_dir: models
+  reports_dir: reports
+
+data:
+  seed: 42
+  near_dup_hamming: 10         # of 256 bits; images closer than this are grouped (leakage guard)
+  n_test_splits: 7             # 1/7  ~ 14% test
+  n_val_splits: 6              # 1/6 of the rest ~ 14% val  -> ~72/14/14
+
+model:
+  name: efficientnet_b0        # efficientnet_b0 | mobilenet_v3_large | resnet18
+  pretrained: true
+  dropout: 0.3
+  input_size: 256
+
+train:
+  batch_size: 32
+  freeze_epochs: 3             # phase 1: head only
+  finetune_epochs: 25          # phase 2: full network, cosine LR
+  lr_head: 1.0e-3
+  lr_backbone: 1.0e-4
+  weight_decay: 1.0e-4
+  patience: 7                  # early stopping on val average precision
+  imbalance: pos_weight        # pos_weight | sampler | both | none
+  num_workers: 4
+  amp: true
+
+augment:                       # castings are rotation invariant; no heavy crops (defects are small)
+  rotation: 180
+  translate: 0.05
+  scale: 0.05
+  brightness: 0.2
+  contrast: 0.2
+
+threshold:
+  min_recall: 0.98             # operating point: recall on "defective" >= this, max precision

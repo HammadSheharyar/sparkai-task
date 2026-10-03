@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    image: casting-defect-api:1.0.0
+    ports: ["8000:8000"]
+    environment:
+      MAX_UPLOAD_MB: "10"
+      REVIEW_CONFIDENCE: "0.8"
+      PREDICTION_LOG: /app/logs/predictions.jsonl
+      # API_KEY: change-me          # uncomment to require X-API-Key
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits: {cpus: "2", memory: 1g}

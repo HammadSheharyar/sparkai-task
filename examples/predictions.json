@@ -1,0 +1,152 @@
+[
+  {
+    "image": "images/cast_ok_0_3857.jpeg",
+    "true_class": "normal",
+    "predicted_class": "normal",
+    "confidence": 1.0,
+    "defect_probability": 0.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 18.88,
+      "inference_ms": 14.51,
+      "total_ms": 33.39
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_ok_0_4816.jpeg",
+    "true_class": "normal",
+    "predicted_class": "normal",
+    "confidence": 1.0,
+    "defect_probability": 0.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 3.51,
+      "inference_ms": 13.75,
+      "total_ms": 17.26
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_ok_0_2707.jpeg",
+    "true_class": "normal",
+    "predicted_class": "normal",
+    "confidence": 1.0,
+    "defect_probability": 0.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 3.23,
+      "inference_ms": 14.24,
+      "total_ms": 17.48
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_ok_0_1548.jpeg",
+    "true_class": "normal",
+    "predicted_class": "normal",
+    "confidence": 1.0,
+    "defect_probability": 0.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 3.23,
+      "inference_ms": 14.27,
+      "total_ms": 17.5
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_ok_0_98.jpeg",
+    "true_class": "normal",
+    "predicted_class": "normal",
+    "confidence": 1.0,
+    "defect_probability": 0.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 2.35,
+      "inference_ms": 15.33,
+      "total_ms": 17.68
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_def_0_8541.jpeg",
+    "true_class": "defective",
+    "predicted_class": "defective",
+    "confidence": 0.999,
+    "defect_probability": 1.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 3.82,
+      "inference_ms": 12.85,
+      "total_ms": 16.67
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_def_0_782.jpeg",
+    "true_class": "defective",
+    "predicted_class": "defective",
+    "confidence": 1.0,
+    "defect_probability": 1.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 3.44,
+      "inference_ms": 13.38,
+      "total_ms": 16.83
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_def_0_758.jpeg",
+    "true_class": "defective",
+    "predicted_class": "defective",
+    "confidence": 0.9699,
+    "defect_probability": 1.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 3.33,
+      "inference_ms": 13.83,
+      "total_ms": 17.15
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_def_0_6705.jpeg",
+    "true_class": "defective",
+    "predicted_class": "defective",
+    "confidence": 0.9997,
+    "defect_probability": 1.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 2.36,
+      "inference_ms": 14.76,
+      "total_ms": 17.12
+    },
+    "model_version": "1.0.0"
+  },
+  {
+    "image": "images/cast_def_0_8192.jpeg",
+    "true_class": "defective",
+    "predicted_class": "defective",
+    "confidence": 0.9992,
+    "defect_probability": 1.0,
+    "threshold": 0.9995,
+    "needs_human_review": false,
+    "latency": {
+      "preprocess_ms": 2.52,
+      "inference_ms": 15.33,
+      "total_ms": 17.84
+    },
+    "model_version": "1.0.0"
+  }
+]

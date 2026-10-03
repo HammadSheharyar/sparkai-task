@@ -1,0 +1,80 @@
+{
+  "threshold": 0.9994744658470154,
+  "n_fp": 0,
+  "n_fn": 12,
+  "error_vs_correct_stats": {
+    "FN": {
+      "n": 12,
+      "mean_prob": 0.8930000066757202,
+      "brightness": 140.303,
+      "sharpness": 188.704
+    },
+    "ok": {
+      "n": 1029,
+      "mean_prob": 0.574999988079071,
+      "brightness": 143.546,
+      "sharpness": 185.352
+    }
+  },
+  "calibration_by_prob_bin": {
+    "(-0.001, 0.1]": {
+      "n": 436,
+      "defective_rate": 0.0
+    },
+    "(0.1, 0.3]": {
+      "n": 4,
+      "defective_rate": 0.25
+    },
+    "(0.5, 0.7]": {
+      "n": 1,
+      "defective_rate": 1.0
+    },
+    "(0.9, 1.0]": {
+      "n": 600,
+      "defective_rate": 1.0
+    }
+  },
+  "worst_fp": [],
+  "worst_fn": [
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_7057.jpeg",
+      "prob": 0.12304650992155075
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_357.jpeg",
+      "prob": 0.6546549201011658
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\test\\def_front\\new__0_7323.jpeg",
+      "prob": 0.9720672369003296
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_5080.jpeg",
+      "prob": 0.9803138375282288
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_4727.jpeg",
+      "prob": 0.9968650937080383
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_9208.jpeg",
+      "prob": 0.9979921579360962
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\test\\def_front\\cast_def_0_3123.jpeg",
+      "prob": 0.9982494115829468
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_2625.jpeg",
+      "prob": 0.9988157749176025
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_4200.jpeg",
+      "prob": 0.9988371729850769
+    },
+    {
+      "path": "E:\\spct solutions\\casting-defect-detection\\data\\raw\\train\\def_front\\cast_def_0_2711.jpeg",
+      "prob": 0.9991090893745422
+    }
+  ]
+}
